@@ -38,6 +38,14 @@ class StoreUpdateUser extends FormRequest
             ]
         ];
 
+        if ($this->method() === 'PUT' || $this->method() === 'PATCH') {
+            $rules['password'] = [
+                'nullable',
+                'min:6',
+                'max:100'
+            ];
+        }
+
         return $rules;
     }
 }
