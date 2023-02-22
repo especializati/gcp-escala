@@ -1,20 +1,20 @@
 
-# Setup Docker Para Projetos Laravel (8, 9 ou 10)
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+# Simple Example CRUD Laravel 10.x
+[Cursos de Laravel (PT-BR)](https://academy.especializati.com.br)
 
-### Passo a passo
-Clone Repositório
+### Step by Step
+Clone Repository
 ```sh
 git clone https://github.com/especializati/setup-docker-laravel.git
 ```
 
-Clone os Arquivos do Laravel
+Clone Laravel Files
 ```sh
 git clone https://github.com/laravel/laravel.git app-laravel
 ```
 
 
-Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
+Copy docker-compose.yml, Dockerfile and docker/ directory files to your project
 ```sh
 cp -rf setup-docker-laravel/* app-laravel/
 ```
@@ -23,13 +23,13 @@ cd app-laravel/
 ```
 
 
-Crie o Arquivo .env
+Create .env File
 ```sh
 cp .env.example .env
 ```
 
 
-Atualize as variáveis de ambiente do arquivo .env
+Update the environment variables in the .env file
 ```dosini
 APP_NAME=EspecializaTi
 APP_URL=http://localhost:8989
@@ -51,29 +51,29 @@ REDIS_PORT=6379
 ```
 
 
-Suba os containers do projeto
+Start project containers
 ```sh
 docker-compose up -d
 ```
 
 
-Acessar o container
+Access the container
 ```sh
 docker-compose exec app bash
 ```
 
 
-Instalar as dependências do projeto
+Install project dependencies
 ```sh
 composer install
 ```
 
 
-Gerar a key do projeto Laravel
+Generate Laravel project key
 ```sh
 php artisan key:generate
 ```
 
 
-Acessar o projeto
+Access the project
 [http://localhost:8989](http://localhost:8989)
