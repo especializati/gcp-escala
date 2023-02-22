@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreUpdateUser;
 use App\Http\Resources\UserResource;
 use App\Models\User;
-use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function __construct(
         protected User $repository,
-    ) {}
+    ) {
+    }
 
     /**
      * Display a listing of the resource.
