@@ -25,24 +25,24 @@ class StoreUpdateUser extends FormRequest
             'name' => [
                 'required',
                 'min:3',
-                'max:255'
+                'max:255',
             ],
             'email' => [
                 'unique:users',
-                'max:255'
+                'max:255',
             ],
             'password' => [
                 'required',
                 'min:6',
-                'max:100'
-            ]
+                'max:100',
+            ],
         ];
 
         if ($this->method() === 'PUT' || $this->method() === 'PATCH') {
             $rules['password'] = [
                 'nullable',
                 'min:6',
-                'max:100'
+                'max:100',
             ];
         }
 
