@@ -41,7 +41,9 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $user = $this->repository->findOrFail($id);
+
+        return new UserResource($user);
     }
 
     /**
