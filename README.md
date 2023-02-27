@@ -12,21 +12,15 @@ Links Úteis:
 ### Step by Step
 Clone Repository
 ```sh
-git clone https://github.com/especializati/setup-docker-laravel.git
-```
-
-Clone Laravel Files
-```sh
-git clone https://github.com/laravel/laravel.git app-laravel
-```
-
-
-Copy docker-compose.yml, Dockerfile and docker/ directory files to your project
-```sh
-cp -rf setup-docker-laravel/* app-laravel/
+git clone https://github.com/especializati/gcp-escala.git app-laravel
 ```
 ```sh
 cd app-laravel/
+```
+
+Remove Version Control
+```sh
+rm -rf .git
 ```
 
 
@@ -38,7 +32,7 @@ cp .env.example .env
 
 Update the environment variables in the .env file
 ```dosini
-APP_NAME=EspecializaTi
+APP_NAME="Especializa Ti"
 APP_URL=http://localhost:8989
 
 DB_CONNECTION=mysql
@@ -83,4 +77,4 @@ php artisan key:generate
 
 
 Access the project
-[http://localhost:8989](http://localhost:8989)
+[http://localhost](http://localhost)
