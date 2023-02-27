@@ -1,6 +1,13 @@
+# Curso GCP: Escalabilidade e Alta Disponibilidade na Nuvem da Google
 
-# Simple Example CRUD Laravel 10.x
-[Cursos de Laravel (PT-BR)](https://academy.especializati.com.br)
+Neste curso vamos trabalhar com escala horizontal de aplicações na nuvem da Google.
+
+- :movie_camera: [Acesse o Curso](https://academy.especializati.com.br/curso/gcp-escalabilidade-e-alta-disponibilidade-de-uma-aplicacao-na-nuvem-da-google).
+
+
+Links Úteis:
+
+- :tada: [Saiba Mais](https://linktr.ee/especializati)
 
 ### Step by Step
 Clone Repository
